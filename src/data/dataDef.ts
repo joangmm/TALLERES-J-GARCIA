@@ -35,15 +35,15 @@ interface HeroActionItem {
 }
 
 /**
- * About section
+ * Sobre_nosotros section
  */
-export interface About {
+export interface Sobre_nosotros {
   profileImageSrc?: string;
   description: string;
-  aboutItems: AboutItem[];
+  Sobre_nosotrosItems: Sobre_nosotrosItem[];
 }
 
-export interface AboutItem {
+export interface Sobre_nosotrosItem {
   label: string;
   text: string;
   Icon?: (props: SVGProps<SVGSVGElement>) => JSX.Element;

@@ -28,7 +28,7 @@ import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
 import profilepic from '../images/profilepic.jpg';
 import testimonialImage from '../images/testimonial.webp';
 import {
-  About,
+  Sobre_nosotros,
   ContactSection,
   ContactType,
   Hero,
@@ -53,7 +53,7 @@ export const homePageMeta: HomepageMeta = {
  */
 export const SectionId = {
   Hero: 'hero',
-  About: 'about',
+  Sobre_nosotros: 'Sobre_nosotros',
   Contact: 'contact',
   Portfolio: 'portfolio',
   Resume: 'resume',
@@ -100,14 +100,14 @@ export const heroData: Hero = {
 };
 
 /**
- * About section
+ * Sobre_nosotros section
  */
-export const aboutData: About = {
+export const Sobre_nosotrosData: Sobre_nosotros = {
   profileImageSrc: profilepic,
   description: `Use this bio section as your way of describing yourself and saying what you do, what technologies you like
   to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
   in.`,
-  aboutItems: [
+  Sobre_nosotrosItems: [
     {label: 'Location', text: 'Victoria, BC', Icon: MapIcon},
     {label: 'Age', text: '29', Icon: CalendarIcon},
     {label: 'Nationality', text: 'Canadian / Irish', Icon: FlagIcon},
@@ -319,7 +319,7 @@ export const testimonial: TestimonialSection = {
     },
     {
       name: 'Jane Doe',
-      text: 'Here you should write some nice things that someone has said about you. Encourage them to be specific and include important details (notes about a project you were on together, impressive quality produced, etc).',
+      text: 'Here you should write some nice things that someone has said Sobre_nosotros you. Encourage them to be specific and include important details (notes Sobre_nosotros a project you were on together, impressive quality produced, etc).',
       image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/14.jpg',
     },
     {

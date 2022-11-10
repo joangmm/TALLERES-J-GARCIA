@@ -67,5 +67,5 @@ const Contact: FC = memo(() => {
   );
 });
 
-Contact.displayName = 'About';
+Contact.displayName = 'Sobre_nosotros';
 export default Contact;
