@@ -34,10 +34,8 @@ import {
   Hero,
   HomepageMeta,
   PortfolioItem,
-  SkillGroup,
   Social,
-  TestimonialSection,
-  TimelineItem,
+  TestimonialSection
 } from './dataDef';
 
 /**
@@ -54,11 +52,8 @@ export const homePageMeta: HomepageMeta = {
 export const SectionId = {
   Hero: 'Inicio',
   Sobre_nosotros: 'Sobre nosotros',
-  //Resume: 'resume',
   Contact: 'Contacto',
   Portfolio: 'Galería',
-  //Skills: 'skills',
-  //Stats: 'stats',
   Testimonials: 'Testimonios',
 } as const;
 
@@ -117,80 +112,6 @@ export const Sobre_nosotrosData: Sobre_nosotros = {
     {label: 'Ubicación', text: ' C/ Pompeu i Fabra, 26.', Icon: MapIcon}
   ],
 };
-
-/**
- * Skills section
- */
-export const skills: SkillGroup[] = [
-  {
-    name: 'Spoken languages',
-    skills: [
-      {
-        name: 'English',
-        level: 10,
-      },
-      {
-        name: 'French',
-        level: 4,
-      },
-      {
-        name: 'Spanish',
-        level: 3,
-      },
-    ],
-  },
-  {
-    name: 'Frontend development',
-    skills: [
-      {
-        name: 'React',
-        level: 9,
-      },
-      {
-        name: 'Typescript',
-        level: 7,
-      },
-      {
-        name: 'GraphQL',
-        level: 6,
-      },
-    ],
-  },
-  {
-    name: 'Backend development',
-    skills: [
-      {
-        name: 'Node.js',
-        level: 8,
-      },
-      {
-        name: 'Rust',
-        level: 5,
-      },
-      {
-        name: 'Golang',
-        level: 4,
-      },
-    ],
-  },
-  {
-    name: 'Mobile development',
-    skills: [
-      {
-        name: 'React Native',
-        level: 9,
-      },
-      {
-        name: 'Flutter',
-        level: 4,
-      },
-      {
-        name: 'Swift',
-        level: 3,
-      },
-    ],
-  },
-];
 
 /**
  * Portfolio section
@@ -256,45 +177,7 @@ export const portfolioItems: PortfolioItem[] = [
 /**
  * Resume section -- TODO: Standardize resume contact format or offer MDX
  */
-export const education: TimelineItem[] = [
-  {
-    date: 'April 2007',
-    location: 'Clown college',
-    title: 'Masters in Beer tasting',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
-  },
-  {
-    date: 'March 2003',
-    location: 'School of Business',
-    title: 'What did you study 101',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
-  },
-];
 
-export const experience: TimelineItem[] = [
-  {
-    date: 'March 2010 - Present',
-    location: 'Awesome Development Company',
-    title: 'Senior UX Engineer',
-    content: (
-      <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
-      </p>
-    ),
-  },
-  {
-    date: 'March 2007 - February 2010',
-    location: 'Garage Startup Studio',
-    title: 'Junior bug fixer',
-    content: (
-      <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
-      </p>
-    ),
-  },
-];
 
 /**
  * Testimonial section
