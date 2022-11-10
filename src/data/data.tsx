@@ -1,18 +1,18 @@
 import {
-  AcademicCapIcon,
-  CalendarIcon,
-  DownloadIcon,
-  FlagIcon,
-  MapIcon,
-  OfficeBuildingIcon,
-  SparklesIcon,
+  //AcademicCapIcon,
+  //CalendarIcon,
+  //DownloadIcon,
+  //FlagIcon,
+  MapIcon//,
+  //OfficeBuildingIcon,
+  //SparklesIcon,
 } from '@heroicons/react/outline';
 
-import GithubIcon from '../components/Icon/GithubIcon';
-import InstagramIcon from '../components/Icon/InstagramIcon';
-import LinkedInIcon from '../components/Icon/LinkedInIcon';
-import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
-import TwitterIcon from '../components/Icon/TwitterIcon';
+import GithubIcon from '../components/Icon/GithubIcon';/////
+//import InstagramIcon from '../components/Icon/InstagramIcon';
+//import LinkedInIcon from '../components/Icon/LinkedInIcon';
+//import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
+//import TwitterIcon from '../components/Icon/TwitterIcon';
 import heroImage from '../images/header-background.webp';
 import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
 import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
@@ -25,7 +25,7 @@ import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
 import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
 import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
 import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
-import profilepic from '../images/profilepic.jpg';
+import mappic from '../images/profilepic.jpg';
 import testimonialImage from '../images/testimonial.webp';
 import {
   Sobre_nosotros,
@@ -44,22 +44,22 @@ import {
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'React Resume Template',
-  description: "Example site built with Tim Baker's react resume template",
+  title: 'Talleres J García',
+  description: "Taller de reparación y mantenimiento de automóbiles en Santa Coloma de Gramanet, Barcelona.",
 };
 
 /**
  * Section definition
  */
 export const SectionId = {
-  Hero: 'hero',
-  Sobre_nosotros: 'Sobre_nosotros',
-  Contact: 'contact',
-  Portfolio: 'portfolio',
-  Resume: 'resume',
-  Skills: 'skills',
-  Stats: 'stats',
-  Testimonials: 'testimonials',
+  Hero: 'Inicio',
+  Sobre_nosotros: 'Sobre nosotros',
+  //Resume: 'resume',
+  Contact: 'Contacto',
+  Portfolio: 'Galería',
+  //Skills: 'skills',
+  //Stats: 'stats',
+  Testimonials: 'Testimonios',
 } as const;
 
 export type SectionId = typeof SectionId[keyof typeof SectionId];
@@ -69,32 +69,24 @@ export type SectionId = typeof SectionId[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `I'm Tim Baker.`,
+  name: `Talleres J García.`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Victoria based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
-        at <strong className="text-stone-100">Instant Domains</strong> helping build a modern, mobile-first, domain
-        registrar and site builder.
+
+        Somos un taller de <strong className="text-stone-100"> reparación y mantenimiento de automóviles</strong> ubicado en Santa Coloma de Gramanet, en Barcelona.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me training in <strong className="text-stone-100">Muay Thai</strong>,
-        plucking my <strong className="text-stone-100">banjo</strong>, or exploring beautiful{' '}
-        <strong className="text-stone-100">Vancouver Island</strong>.
+      Tenemos <strong className="text-stone-100">40 años de experiencia </strong>
+      en el campo, y hemos trabajado con todo tipo de marcas de automóbiles, y hecho todo tipo de reparaciones.
       </p>
     </>
   ),
   actions: [
     {
-      href: '/assets/resume.pdf',
-      text: 'Resume',
-      primary: true,
-      Icon: DownloadIcon,
-    },
-    {
       href: `#${SectionId.Contact}`,
-      text: 'Contact',
-      primary: false,
+      text: 'Contacta con nosotros',
+      primary: true,
     },
   ],
 };
@@ -103,17 +95,26 @@ export const heroData: Hero = {
  * Sobre_nosotros section
  */
 export const Sobre_nosotrosData: Sobre_nosotros = {
-  profileImageSrc: profilepic,
-  description: `Use this bio section as your way of describing yourself and saying what you do, what technologies you like
-  to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
-  in.`,
+  profileImageSrc: mappic,
+  description: `Todos estos años hemos estado prestando una ámplia variedad de servicios, como los que se muestran a 
+  continuación:`
+  ,
+  reparations: [
+    {text: "⛽Pre-ITV"},
+    {text: "🛢️Cambio de aceite"},
+    {text: "🥶Climatización"},
+    {text: "⚡Baterías"},
+    {text: "💨Escapes"},
+    {text: "⚓Frenos"},
+    {text: "🚗Mecánica"},
+    {text: "⚫Neumáticos"},
+    {text: "⚙️Distribución"},
+    {text: "📃Revisión"},
+    {text: "⚖️Suspensión"},
+    {text: "💡Iluminación"}
+  ],
   Sobre_nosotrosItems: [
-    {label: 'Location', text: 'Victoria, BC', Icon: MapIcon},
-    {label: 'Age', text: '29', Icon: CalendarIcon},
-    {label: 'Nationality', text: 'Canadian / Irish', Icon: FlagIcon},
-    {label: 'Interests', text: 'Motorcycles, Muay Thai, Banjos', Icon: SparklesIcon},
-    {label: 'Study', text: 'University of Victoria', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Instant Domains, inc.', Icon: OfficeBuildingIcon},
+    {label: 'Ubicación', text: ' C/ Pompeu i Fabra, 26.', Icon: MapIcon}
   ],
 };
 
@@ -198,67 +199,56 @@ export const portfolioItems: PortfolioItem[] = [
   {
     title: 'Project title 1',
     description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
     image: porfolioImage1,
   },
   {
     title: 'Project title 2',
     description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
     image: porfolioImage2,
   },
   {
     title: 'Project title 3',
     description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
     image: porfolioImage3,
   },
   {
     title: 'Project title 4',
     description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
     image: porfolioImage4,
   },
   {
     title: 'Project title 5',
     description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
     image: porfolioImage5,
   },
   {
     title: 'Project title 6',
     description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
     image: porfolioImage6,
   },
   {
     title: 'Project title 7',
     description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
     image: porfolioImage7,
   },
   {
     title: 'Project title 8',
     description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
     image: porfolioImage8,
   },
   {
     title: 'Project title 9',
     description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
     image: porfolioImage9,
   },
   {
     title: 'Project title 10',
     description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
     image: porfolioImage10,
   },
   {
     title: 'Project title 11',
     description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
     image: porfolioImage11,
   },
 ];
@@ -313,19 +303,19 @@ export const testimonial: TestimonialSection = {
   imageSrc: testimonialImage,
   testimonials: [
     {
-      name: 'John Doe',
-      text: 'Use this as an opportunity to promote what it is like to work with you. High value testimonials include ones from current or past co-workers, managers, or from happy clients.',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/169.jpg',
+      name: 'Àngels Prat',
+      text: 'Muy buen profesional, mecánico en el que se puede confiar. Mi coche de 20 años continúa circulando y en buenas condiciones gracias a él.',
+      image: 'https://i.postimg.cc/J4b0rmns/woman-medium-light-skin-tone-blond-hair.png',
     },
     {
-      name: 'Jane Doe',
-      text: 'Here you should write some nice things that someone has said Sobre_nosotros you. Encourage them to be specific and include important details (notes Sobre_nosotros a project you were on together, impressive quality produced, etc).',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/14.jpg',
+      name: 'Loren Fer',
+      text: 'Mecánico excelente y confiable. He cambiado de domicilio y sigo llevándole el coche porque confío. Buena persona y buen profesional.',
+      image: 'https://i.postimg.cc/PJ1kJJXP/man-medium-skin-tone-beard.png',
     },
     {
-      name: 'Someone else',
-      text: 'Add several of these, and keep them as fresh as possible, but be sure to focus on quality testimonials with strong highlights of your skills/work ethic.',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/69.jpg',
+      name: 'Marc Fernández',
+      text: 'Mi mecánico de confianza, rápido, eficiente, buen trato y precio razonable.',
+      image: 'https://i.postimg.cc/SQ6Dc21V/man-light-skin-tone-beard.png',
     },
   ],
 };
@@ -335,39 +325,20 @@ export const testimonial: TestimonialSection = {
  */
 
 export const contact: ContactSection = {
-  headerText: 'Get in touch.',
-  description: 'Here is a good spot for a message to your readers to let them know how best to reach out to you.',
+  headerText: '¡Ponte en contacto!',
+  description: 'O escríbenos vía correo:',
   items: [
     {
       type: ContactType.Email,
-      text: 'reachout@timbaker.me',
-      href: 'mailto:reachout@timbaker.me',
-    },
-    {
-      type: ContactType.Location,
-      text: 'Victoria BC, Canada',
-      href: 'https://www.google.ca/maps/place/Victoria,+BC/@48.4262362,-123.376775,14z',
-    },
-    {
-      type: ContactType.Instagram,
-      text: '@tbakerx',
-      href: 'https://www.instagram.com/tbakerx/',
-    },
-    {
-      type: ContactType.Github,
-      text: 'tbakerx',
-      href: 'https://github.com/tbakerx',
-    },
-  ],
+      text: 'talleresjgarcia@hotmail.com',
+      href: 'https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&su=Acerca+de...&to=talleresjgarcia@hotmail.com&body=Buenas+Juan,%0A%0ASoy+XXXXX+y+estoy+interesado+en+contactar+contigo+porque...%0A%0AMuchas+gracias,%0A%0A%0A',
+    }
+  ]
 };
 
 /**
  * Social items
  */
 export const socialLinks: Social[] = [
-  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/tbakerx'},
-  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
-  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/'},
-  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/tbakerx/'},
-  {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
+  {label: 'Call us!', Icon: GithubIcon, href: 'tel:933861615'}
 ];

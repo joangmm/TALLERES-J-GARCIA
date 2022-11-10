@@ -40,7 +40,12 @@ interface HeroActionItem {
 export interface Sobre_nosotros {
   profileImageSrc?: string;
   description: string;
+  reparations: Reparation[];
   Sobre_nosotrosItems: Sobre_nosotrosItem[];
+}
+
+export interface Reparation {
+  text: string;
 }
 
 export interface Sobre_nosotrosItem {
@@ -79,7 +84,6 @@ export interface SkillGroup {
 export interface PortfolioItem {
   title: string;
   description: string;
-  url: string;
   image: string | StaticImageData;
 }
 
