@@ -33,7 +33,7 @@ import {
   ContactType,
   Hero,
   HomepageMeta,
-  PortfolioItem,
+  GaleriaItem,
   Social,
   TestimonialSection
 } from './dataDef';
@@ -53,7 +53,7 @@ export const SectionId = {
   Hero: 'Inicio',
   Sobre_nosotros: 'Sobre nosotros',
   Contact: 'Contacto',
-  Portfolio: 'Galería',
+  Galeria: 'Galería',
   Testimonials: 'Testimonios',
 } as const;
 
@@ -114,9 +114,9 @@ export const Sobre_nosotrosData: Sobre_nosotros = {
 };
 
 /**
- * Portfolio section
+ * Galeria section
  */
-export const portfolioItems: PortfolioItem[] = [
+export const portfolioItems: GaleriaItem[] = [
   {
     title: 'Project title 1',
     description: 'Give a short description of your project here.',

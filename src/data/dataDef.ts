@@ -64,9 +64,9 @@ export interface Stat {
 }
 
 /**
- * Portfolio section
+ * Galeria section
  */
-export interface PortfolioItem {
+export interface GaleriaItem {
   title: string;
   description: string;
   image: string | StaticImageData;
