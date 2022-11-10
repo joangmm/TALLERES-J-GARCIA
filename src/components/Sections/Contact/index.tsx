@@ -41,6 +41,7 @@ const Contact: FC = memo(() => {
             <dl className="flex flex-col space-y-4 text-base text-neutral-500 sm:space-y-2">
               {items.map(({type, text, href}) => {
                 const {Icon, srLabel} = ContactValueMap[type];
+                
                 return (
                   <div key={srLabel}>
                     <dt className="sr-only">{srLabel}</dt>
