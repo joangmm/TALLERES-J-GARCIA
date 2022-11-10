@@ -14,7 +14,6 @@ const Footer: FC = memo(() => (
     </div>
     <div className="flex flex-col items-center gap-y-6">
       <div className="flex gap-x-4 text-neutral-500">
-        {/* <Socials /> */}
       </div>
       <span className="text-sm text-neutral-700">©2022 Joan Garcia Marty. Todos los derechos reservados.</span>
     </div>
