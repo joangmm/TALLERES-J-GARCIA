@@ -53,8 +53,14 @@ const Contact: FC = memo(() => {
                         )}
                         href={href}
                         target="_blank">
-                        <Icon aria-hidden="true" className="h-4 w-4 flex-shrink-0 text-neutral-100 sm:h-5 sm:w-5" />
-                        <span className="ml-3 text-sm sm:text-base">{text}</span>
+                        
+                          <button
+                            aria-label="Submit contact form"
+                            className="w-max rounded-full border-2 border-orange-600 bg-stone-900 px-4 py-2 text-sm font-medium text-white shadow-md outline-none hover:bg-stone-800 focus:ring-2 focus:ring-orange-600 focus:ring-offset-2 focus:ring-offset-stone-800"
+                            type="submit">
+                              <span className="text-sm sm:text-base">{text}</span>
+                          </button>
+
                       </a>
                     </dd>
                   </div>

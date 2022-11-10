@@ -213,7 +213,7 @@ export const contact: ContactSection = {
   items: [
     {
       type: ContactType.Email,
-      text: 'talleresjgarcia@hotmail.com',
+      text: '📪 talleresjgarcia@hotmail.com',
       href: 'https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&su=Acerca+de...&to=talleresjgarcia@hotmail.com&body=Buenas+Juan,%0A%0ASoy+XXXXX+y+estoy+interesado+en+contactar+contigo+porque...%0A%0AMuchas+gracias,%0A%0A%0A',
     }
   ]
