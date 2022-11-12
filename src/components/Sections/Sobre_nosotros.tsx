@@ -40,7 +40,7 @@ const Sobre_nosotros: FC = memo(() => {
                 {Icon && <Icon className="h-5 w-5 text-white" />}
                 <a href="https://www.google.com/maps/place/Talleres+J.Garc%C3%ADa/@41.4502758,2.2054594,17z/data=!3m1!4b1!4m5!3m4!1s0x12a4bc92f12ba333:0xcc610dfa3108bad0!8m2!3d41.4502758!4d2.2076481/">
                   <span className="text-sm font-bold text-white">{label}:</span>
-                  <span className=" text-sm text-orange-300">{text}</span>
+                  <span className=" text-sm text-orange-500">{text}</span>
                 </a>
               </li>
             ))}
