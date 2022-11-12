@@ -40,7 +40,7 @@ const Contact: FC = memo(() => {
             <p className="prose leading-6 text-neutral-300">{description}</p>
             <dl className="flex flex-col space-y-4 text-base text-neutral-500 sm:space-y-2">
               {items.map(({type, text, href}) => {
-                const {Icon, srLabel} = ContactValueMap[type];
+                const {srLabel} = ContactValueMap[type];
                 
                 return (
                   <div key={srLabel}>
